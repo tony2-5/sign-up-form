@@ -1,0 +1,100 @@
+body, html {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+p {
+    margin: 0;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: none;
+    box-shadow: 5px 3px 10px rgb(194, 199, 211);
+    padding-left: 3rem;
+}
+.rightBody {
+    display: flex;
+    flex-direction: column;
+}
+.rightHeader {
+    display: flex;
+    flex-direction: column;
+    padding:3rem;
+    padding-bottom: 6rem;
+    padding-right: 10rem;;
+    font-size: 28px;
+}
+.formStruc {
+    display: flex;
+    gap:8rem;
+}
+.formStruc div {
+    display: flex;
+    flex-direction: column;
+}
+form p {
+    padding-left:3rem;
+    font-size: 28px; 
+}
+#finalP {
+    padding-left:3rem;
+    font-size: 28px;
+}
+#seperateP {
+    margin-top: 36px;
+}
+.leftBody {
+    position:relative;
+    display: flex;
+    width: 40vw;
+}
+#background {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+.banner {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(0,0,0,.5);
+    padding: 12px;
+    gap: 50px;
+}
+.banner img {
+    width: 20%;
+}
+.banner p {
+    font-size: 80px;
+}
+#backgroundCredit {
+    display: flex;
+    position:absolute;
+    top: 97%;
+    width: 100%;
+}
+#backgroundCredit p{
+    color: white;
+    margin: auto;
+    background-color: rgb(0,0,0,.5);
+}
+a {
+    color:white;
+}
+button {
+
+}
+
+
