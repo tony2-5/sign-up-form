@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -25,7 +26,7 @@
             <p>Sign up <em>now</em> to get started.</p>
             <p id="seperateP">You <em>know </em>you want to.</p>
         </div>
-        <form action="index.html" method="GET">
+        <form action="index.html" method="GET" onsubmit="return passwordVerify()">
             <p>Let's do this!</p>
             <fieldset>
                 <div class="formStruc">
@@ -45,23 +46,25 @@
                     </div>
                     <div>
                         <label for="phone">PHONE NUMBER</label>
-                        <input type="tel" name="phone#" id="phone" required>
+                        <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="ex. 999-999-9999" required>
                     </div>
                 </div>
                 <div class="formStruc">
                     <div>
                         <label for="password">PASSWORD</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
+                        <p id="verify"></p>
                     </div>
                     <div>
                         <label for="cPassword">CONFIRM PASSWORD</label>
-                        <input type="password" name="cPassword" id="cPassword">
+                        <input type="password" name="cPassword" id="cPassword" required>
                     </div>
                 </div>
             </fieldset>
-            <button type="submit">Submit</button>
+            <button type="submit">Create Account</button>
         </form>
-        <p id="finalP">Already have and account? <span id="logIn">Log in</span></p>
+        <p id="finalP">Already have and account?&nbsp <a id="logIn" href="">Log in</a></p>
     </div>
 </body>
+
 </html>
